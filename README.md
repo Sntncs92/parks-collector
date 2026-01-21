@@ -13,7 +13,7 @@ Proyecto para recopilar datos de tiempos de espera en parques de atracciones de 
 
 
 
-Tras un par de años estudiando programación y buscando como orientarme hacia el campo del análisis de datos apareció en mi cabeza la idea de recopilar y tratar los datos de uno de mis pasatiempos favoritos, los parques de atracciones. Queriendo unir ambas cosas nace la idea de Parks Collector.
+Tras un par de años estudiando programación y buscando cómo orientarme hacia el campo del análisis de datos apareció en mi cabeza la idea de recopilar y tratar los datos de uno de mis pasatiempos favoritos, los parques de atracciones. Queriendo unir ambas cosas nace la idea de Parks Collector.
 
 ![giphy](https://github.com/user-attachments/assets/88a0e783-b1ab-4fc7-a35a-585946c6fa7a)
 
@@ -29,13 +29,13 @@ Desde que arrancó este proyecto en octubre de 2025 hasta el momento que escribo
 
 # Funciones de Parks Collector 〽️
 
-Como se comenta anteriormente la principal función de este script no es otra que recopilar los datos de espera en tiempo reales de las diferentes atracciones de cada uno de los parques temáticos elegidos. Pero para llegar al punto actual he tomado algunas decisiones sobre las que hablaré en este punto.
+Como se comenta anteriormente la principal función de este script no es otra que recopilar los datos de espera en tiempo real de las diferentes atracciones de cada uno de los parques temáticos elegidos. Pero para llegar al punto actual he tomado algunas decisiones sobre las que hablaré en este punto.
 
   🛠️📡 **Conexión con la API.** Dado que ya existen ciertas interfaces que muestran en tiempo real las esperas de parques de todo el mundo yo decidí utilizar la de [themeparks.wiki](https://themeparks.wiki/) que cuenta con un buen número de parques repartidos por 5 continentes
 
-  🛠️🕐 **Multiples husos horarios.** La ubicación de los diferentes parques hace que vayamos a trabajar con diferentes husos horarios. Para que los horarios de cada parque aparezcan siempre referenciados con su horario local he utilizado la libreria [PYTZ](https://pypi.org/project/pytz/)
+  🛠️🕐 **Múltiples husos horarios.** La ubicación de los diferentes parques hace que vayamos a trabajar con diferentes husos horarios. Para que los horarios de cada parque aparezcan siempre referenciados con su horario local he utilizado la librería [PYTZ](https://pypi.org/project/pytz/)
 
-  🛠️🗺️ **Recopilación de datos globales** Aunque la primera versión de Parks Collector se reducía a parques europeos, el alcance del script se ha aumentado hasta recoger datos de parques ubicados en 4 continentes diferentes. Europa, Asia, Oceania y América son los continentes de los que se recopilan datos.
+  🛠️🗺️ **Recopilación de datos globales** Aunque la primera versión de Parks Collector se reducía a parques europeos, el alcance del script se ha aumentado hasta recoger datos de parques ubicados en 4 continentes diferentes. Europa, Asia, Oceanía y América son los continentes de los que se recopilan datos.
 
   ## Próximos objetivos 
 
@@ -49,8 +49,19 @@ Como se comenta anteriormente la principal función de este script no es otra qu
 
 ![giphy](https://github.com/user-attachments/assets/98e6590c-540f-41f1-98b3-62d33ea537d4)
 
+##Como ejecutarlo
+
+Muy sencillito para que puedas arrancar este script en tu propio sistema.
+
+```
+bash
+pip install -r requirements.txt
+python collector.py
+```
+
+
 ## Acceso al proyecto y licencia ✍️
 
-Este proyecto nace de mi inexperiencia y ganas de aprender de los problemas que pueden surgir en una proyecto real (y con los que ya me estoy encontrando). Por este motivo te doy acceso total a mi trabajo y puedes descargarlo, modificarlo, compartirlo y hasta escribir con las mejoras que se te ocurran.
+Este proyecto nace de mi inexperiencia y ganas de aprender de los problemas que pueden surgir en un proyecto real (y con los que ya me estoy encontrando). Por este motivo te doy acceso total a mi trabajo y puedes descargarlo, modificarlo, compartirlo y hasta escribir con las mejoras que se te ocurran.
 
   
