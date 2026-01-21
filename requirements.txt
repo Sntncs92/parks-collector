@@ -1,0 +1,4 @@
+requests>=2.30.0 
+#Para las peticiones http
+pytz>=2023.3
+# Para gestionar los diferentes husos horarios
